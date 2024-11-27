@@ -7,6 +7,12 @@
     <title>Belezas Naturais da Alemanha</title>
     <link rel="stylesheet" href="../style/global.css">
     <link rel="stylesheet" href="../style/descricao.css">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("xTd2kN6OmDu55ertt");
+        })();
+    </script>
 </head>
 
 <body>
@@ -46,12 +52,26 @@
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </section>
         <section class="form-container">
-
+            <div class="divisor">
+                <h3>Fale conosco!</h3>
+            </div>
+            <form>
+                <label for="nome" class="label">Nome:</label>
+                <input type="text" id="nome" name="nome" class="input" required>
+                <label for="email" class="label">Email:</label>
+                <input type="email" id="email" name="email" class="input" required>
+                <label for="telefone" class="label">Telefone:</label>
+                <input type="text" id="telefone" name="telefone" class="input">
+                <label for="texto" class="label">Informe sua dúvida:</label>
+                <textarea id="texto" name="texto" class="textarea" rows="5" cols="33" required></textarea>
+                <button type="submit" class="btn-send">Enviar</button>
+            </form>
         </section>
     </main>
     <footer>
         <p>&copy; 2024 Belezas Naturais da Alemanha</p>
     </footer>
+    <script src="../js/form.js"></script>
 </body>
 
 </html>

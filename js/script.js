@@ -15,3 +15,4 @@ imagens.forEach((img) => {
 closeModal.addEventListener('click', () => {
     modal.close()
 })
+
