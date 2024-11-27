@@ -1,54 +1,4 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Inter", serif;
-}
-
-html, body {
-    width: 100%;
-    height: 100%;
-}
-
-header {
-    position: absolute;
-    width: 100%;
-    height: 60px;
-    padding: 0px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-}
-
-header h1 {
-    font-size: 24px;
-    font-weight: 600;
-    color: white;
-    text-shadow: 0px 0px 3px black;
-}
-
-header nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-header nav ul a {
-    text-decoration: none;
-    font-weight: 500;
-    color: white;
-    text-shadow: 0px 0px 3px black;
-}
-
-header nav ul a:hover {
-    border-bottom: 1px solid white;
-}
-
 .parallax {
     background-size: cover;
     background-position: center;
@@ -184,10 +134,6 @@ article {
 #close-modal:hover {
     background: black;
     color: white;
-}
-
-footer {
-    text-align: center;
 }
 
 @media screen and (min-width: 1560px) {
