@@ -1,115 +1,68 @@
 .container {
     width: 100%;
-    height: 100vh;
+    padding: 100px 0px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-
-    background-image: url('https://cdn.pixabay.com/photo/2018/05/13/09/47/germany-3395753_1280.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.text { 
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    gap: 40px;
+    background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%);
+}
 
-    gap: 10px;
-    width: 30%;
-    /* height: 100%; */
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    padding: 30px;
-    border-radius: 15px;
-    color: white;
-    text-shadow: 0px 0px 3px rgba(0, 0, 0, 1);
+section {
+    width: 80%;
+    height: 450px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+article {
+    height: 100%;
+    max-width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: start;
+    padding: 30px 0px;
+    gap: 20px
+}
+
+article p {
+    text-align: right;
+    line-height: 25px;
 }
 
 iframe {
-    width: 600px;
-    height: 400px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.accordion {
+    background-color: #eee;
     border-radius: 15px;
-}
-
-.form-container {
-    width: 100%;
-    height: 100vh;
-
-    display: flex;
-    flex-direction: column;
-
-    background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
-}
-
-.divisor {
-    width: 100%;
-    height: 100px;
-    background-color: rgba(34, 31, 31, 0.803);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.divisor h3 {
-    font-size: 36px;
-    text-align: center;
-    color: white;
-}
-
-form {
-    width: 400px;
-    height: 500px;
-    background-color: white;
-    border-radius: 15px;
-    margin: auto;
-    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-}
-
-.label {
-    display: block;
-    font-size: 16px;
-    color: rgba(0, 0, 0, 0.9);
-    margin-top: 20px;
-}
-
-.input {
-    width: 100%;
-    height: 40px;
-    border-radius: 5px;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    padding: 0px 10px;
-}
-
-.textarea {
-    width: 100%;
-    height: 120px;
-    border-radius: 5px;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    padding: 10px;
-    resize: none;
-}
-
-.btn-send {
-    margin-top: 10px;
-    width: 100%;
-    height: 40px;
-    border-radius: 5px;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    background-color: black;
-    color: white;
-    font-weight: 600;
-    font-size: 16px;
     cursor: pointer;
-    transition: all 0.2s ease-in-out;
+    padding: 10px;
+    width: 30%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 16px;
+    transition: 0.4s;
 }
 
-.btn-send:hover {
-    background-color: white;
-    color: black;
-    border: 1px solid rgba(0, 0, 0, 0.9);
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+.panel.open {
+    max-height: 200px;
 }

@@ -2,6 +2,7 @@ const imagens = document.querySelectorAll('.img-galeria');
 const modal = document.querySelector('.modal');
 const modalContent = document.querySelector('.modal-content');
 const closeModal = document.querySelector('#close-modal');
+const paisagens = document.querySelector('.paisagens')
 
 imagens.forEach((img) => {
     img.addEventListener('click', () => {
@@ -15,4 +16,8 @@ imagens.forEach((img) => {
 closeModal.addEventListener('click', () => {
     modal.close()
 })
+
+function goToDiv() {
+    paisagens.scrollIntoView();
+}
 
